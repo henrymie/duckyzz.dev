@@ -5,9 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/x-icon" href="/favicon.ico">    
     <title>Project Hub</title>
-    
     <style>
-        .alias {cursor: normal-select.svg;}
+    body {
+  cursor: url('normal-select.svg'), auto;
+}
+
+a, button, [role="button"], input[type="submit"], input[type="button"] {
+  cursor: url('link-select.svg'), pointer;
+}    
+    </style>
+    <style>
         * {
             margin: 0;
             padding: 0;

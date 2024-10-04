@@ -4,15 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mac OS Simulation</title>
-        <style>
-        body {
-            cursor: url('normal-select.svg'), auto;
-        }
-
-        a, button, [role="button"], input[type="submit"], input[type="button"] {
-            cursor: url('link-select.svg'), pointer;
-        }
-    </style>
     <style>
         body, html {
             margin: 0;
@@ -20,6 +11,7 @@
             height: 100%;
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             overflow: hidden;
+            cursor: url('normal-select.svg'), auto;
         }
         #desktop {
             width: 100%;
@@ -78,7 +70,7 @@
         }
         .menu-item {
             padding: 0 10px;
-            cursor: pointer;
+            cursor: url('link-select.svg'), pointer;
         }
         #right-click-menu {
             display: none;
@@ -92,7 +84,7 @@
         .menu-option {
             padding: 5px 20px;
             color: white;
-            cursor: pointer;
+            cursor: url('link-select.svg'), pointer;
         }
         .menu-option:hover {
             background-color: rgba(80, 80, 80, 0.9);
@@ -114,7 +106,7 @@
             margin: 0 5px;
             border-radius: 10px;
             transition: all 0.3s ease;
-            cursor: pointer;
+            cursor: url('link-select.svg'), pointer;
         }
         .dock-icon:hover {
             transform: scale(1.2) translateY(-10px);

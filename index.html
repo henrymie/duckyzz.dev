@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/x-icon" href="/favicon.ico">    
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">    
     <title>Project Hub</title>
     <style>
         * {
@@ -13,7 +13,7 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
         body {
-            background-color: #1a1a1a;
+            background-color: #121212;
             color: #e0e0e0;
             line-height: 1.6;
         }
@@ -23,45 +23,46 @@
             padding: 20px;
         }
         header {
-            background-color: #2c2c2c;
+            background-color: #1e1e1e;
             text-align: center;
-            padding: 60px 0;
-            margin-bottom: 40px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            padding: 80px 0;
+            margin-bottom: 60px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.2);
         }
         h1 {
-            font-size: 3.5rem;
-            margin-bottom: 10px;
-            background: linear-gradient(45deg, #ff6b6b, #feca57);
+            font-size: 4rem;
+            margin-bottom: 20px;
+            background: linear-gradient(45deg, #ff6b6b, #feca57, #48dbfb);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
         }
         #typed-text {
-            font-size: 1.8rem;
-            min-height: 40px;
+            font-size: 2rem;
+            min-height: 48px;
             color: #bbb;
+            font-weight: 300;
         }
         .projects {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-            margin-top: 60px;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 40px;
+            margin-top: 80px;
         }
         .project {
-            background-color: #2c2c2c;
-            border-radius: 15px;
+            background-color: #1e1e1e;
+            border-radius: 20px;
             overflow: hidden;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
         }
         .project:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.2);
         }
         .project-image {
             width: 100%;
-            height: 200px;
+            height: 220px;
             background-size: cover;
             background-position: center;
             position: relative;
@@ -75,44 +76,58 @@
             right: 0;
             bottom: 0;
             background: inherit;
-            transition: transform 0.3s ease;
+            transition: transform 0.5s ease;
         }
         .project:hover .project-image::before {
             transform: scale(1.1);
         }
         .project-content {
-            padding: 20px;
+            padding: 30px;
         }
         .project h3 {
-            font-size: 1.5rem;
-            margin-bottom: 10px;
+            font-size: 1.8rem;
+            margin-bottom: 15px;
             color: #ff6b6b;
         }
         .project p {
-            margin-bottom: 20px;
+            margin-bottom: 25px;
             color: #bbb;
+            font-size: 1.1rem;
         }
         .project a {
             color: #feca57;
             text-decoration: none;
             font-weight: bold;
-            transition: color 0.3s ease;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            padding: 10px 20px;
+            background-color: rgba(254, 202, 87, 0.1);
+            border-radius: 30px;
+            display: inline-block;
         }
         .project a:hover {
             color: #ff6b6b;
+            background-color: rgba(255, 107, 107, 0.1);
+            transform: translateX(5px);
         }
         #mac-os-remake {
             background-image: url('/macimg.png');
         }
-        #project-2 {
+        #monkey-type {
             background-image: url('/monkeytype.png');
         }
         #project-3 {
-            background-image: url('placeholder.com');
+            background-image: url('example.com');
         }
         @media (max-width: 768px) {
             .projects {
                 grid-template-columns: 1fr;
+            }
+            h1 {
+                font-size: 3rem;
+            }
+            #typed-text {
+                font-size: 1.5rem;
             }
         }
     </style>
@@ -130,32 +145,32 @@
                 <div class="project-image" id="mac-os-remake"></div>
                 <div class="project-content">
                     <h3>Mac OS Remake</h3>
-                    <p>A recreation of the Mac OS interface using HTML, CSS, and JavaScript.</p>
-                    <a href="macos.html">Learn More &rarr;</a>
+                    <p>Experience the sleek Mac OS interface recreated with HTML, CSS, and JavaScript. A seamless blend of design and functionality.</p>
+                    <a href="macos.html">Explore Project →</a>
                 </div>
             </div>
             <div class="project">
                 <div class="project-image" id="monkey-type"></div>
                 <div class="project-content">
                     <h3>Monkeytype Lite</h3>
-                    <p>A recreation of Monkeytype using HTML, CSS, and JavaScript, fully functioning.</p>
-                    <a href="monkeytype/typing.html">Learn More &rarr;</a>
+                    <p>Test your typing skills with this fully functional Monkeytype recreation. Challenge yourself and improve your speed!</p>
+                    <a href="monkeytype/typing.html">Try It Out →</a>
                 </div>
             </div>
             <div class="project">
                 <div class="project-image" id="project-3"></div>
                 <div class="project-content">
-                    <h3>Project 3</h3>
-                    <p>Lorem Ipppppppppsummmm</p>
-                    <a href="#">Learn More &rarr;</a>
+                    <h3>Coming Soon</h3>
+                    <p>Exciting new project in development. Stay tuned for the big reveal!</p>
+                    <a href="#">Get Notified →</a>
                 </div>
             </div>
         </section>
     </main>
     <script>
         const phrases = [
-            "Fullstack Developer",
-            "Creator of Mac OS Simulation"
+            "Fullstack Developer ",
+            "Creator of Mac OS Simulation "
         ];
         let i = 0;
         let j = 0;
